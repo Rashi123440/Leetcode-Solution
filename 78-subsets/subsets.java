@@ -1,6 +1,6 @@
 class Solution {
     void solve( int index, int[]nums,List<Integer> current, List <List<Integer>>ans){
-       // List <List<Integer>>ans=new ArrayList<>();
+      
         if(index==nums.length){
             ans.add(new ArrayList<>(current));
             return;

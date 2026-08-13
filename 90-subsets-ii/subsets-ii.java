@@ -2,7 +2,7 @@ class Solution {
     void solve(int index,int[] nums,List<Integer> current, List <List<Integer>>ans){
         ans.add(new ArrayList(current));
         for(int i=index;i<nums.length;i++){
-            if(i>index&&nums[i]==nums[i-1]){
+            if(i>index &&nums[i]==nums[i-1]){
                 continue;
             }
             current.add(nums[i]);

@@ -2,7 +2,7 @@ class Solution {
     public int sumSubarrayMins(int[] arr) {
         int n = arr.length;
         int[] nse = findNSE(arr);
-        int[] psee = findPSEE(arr);
+        int[] psee = findPSE(arr);
         int mod = (int)1e9 + 7;
         int sum = 0;
          for (int i = 0; i < n; i++) {
@@ -27,7 +27,7 @@ class Solution {
         }
         return ans;
     }
-    private int[] findPSEE(int[] arr) {
+    private int[] findPSE(int[] arr) {
         int n = arr.length;
         int[] ans = new int[n];
         Stack<Integer> st = new Stack<>();
